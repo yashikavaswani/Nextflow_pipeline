@@ -1,8 +1,9 @@
 # Nextflow-Based Variant Analysis Pipeline
 
 This project demonstrates the implementation of a bioinformatics analysis workflow using Nextflow. The pipeline automates a complete analysis path starting from raw sequencing reads and ending with a set of detected genomic variants. It has been created primarily as a learning and academic project to understand how real-world bioinformatics pipelines are structured, executed, and shared using modern workflow managers.
-
+All pipeline scripts were written and edited using Visual Studio Code (VS Code) as the development environment.
 The pipeline is written using Nextflow DSL2, which allows the workflow logic to be separated from individual computational tasks. This makes the pipeline easier to understand, debug, modify, and extend in the future.
+
 
 ---
 
