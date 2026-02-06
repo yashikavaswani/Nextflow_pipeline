@@ -1,0 +1,85 @@
+Feb-06 14:54:19.048 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Feb-06 14:54:19.240 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.3
+Feb-06 14:54:19.322 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/yashika/.nextflow/plugins; core-plugins: nf-amazon@3.4.3,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.4,nf-k8s@1.2.2,nf-tower@1.17.4,nf-wave@1.16.1
+Feb-06 14:54:19.395 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Feb-06 14:54:19.404 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Feb-06 14:54:19.410 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Feb-06 14:54:19.457 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Feb-06 14:54:19.828 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Feb-06 14:54:19.922 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/d/Nextflow/Pipeline/nextflow.config
+Feb-06 14:54:19.929 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/d/Nextflow/Pipeline/nextflow.config
+Feb-06 14:54:20.010 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Feb-06 14:54:21.024 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Feb-06 14:54:21.026 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Feb-06 14:54:21.071 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/yashika/.nextflow/secrets/store.json
+Feb-06 14:54:21.077 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@590adb41] - activable => nextflow.secret.LocalSecretsProvider@590adb41
+Feb-06 14:54:21.103 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Feb-06 14:54:21.142 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [chaotic_jennings] DSL2 - revision: c93f7caa7b
+Feb-06 14:54:21.251 [main] DEBUG nextflow.Session - Session UUID: c4a853f5-89c5-4301-bdba-3927d18d65fb
+Feb-06 14:54:21.252 [main] DEBUG nextflow.Session - Run name: chaotic_jennings
+Feb-06 14:54:21.253 [main] DEBUG nextflow.Session - Executor pool size: 18
+Feb-06 14:54:21.280 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Feb-06 14:54:21.295 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=54; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Feb-06 14:54:21.345 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.3 build 10983
+  Created: 22-01-2026 15:34 UTC 
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
+  Encoding: UTF-8 (UTF-8)
+  Process: 5185@DESKTOP-UKK4O9M [127.0.1.1]
+  CPUs: 18 - Mem: 7.5 GB (6.6 GB) - Swap: 2 GB (2 GB)
+Feb-06 14:54:21.425 [main] DEBUG nextflow.Session - Work-dir: /mnt/d/Nextflow/Pipeline/work [v9fs]
+Feb-06 14:54:21.428 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/d/Nextflow/Pipeline/bin
+Feb-06 14:54:21.481 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Feb-06 14:54:21.499 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Feb-06 14:54:21.504 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Feb-06 14:54:21.579 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Feb-06 14:54:21.603 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 19; maxThreads: 1000
+Feb-06 14:54:21.810 [main] DEBUG nextflow.Session - Session start
+Feb-06 14:54:22.109 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Feb-06 14:54:23.377 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_887803e23343301a: /mnt/d/Nextflow/Pipeline/Modules/trimmed_fastqc.nf
+  Script_7a922f896740faec: /mnt/d/Nextflow/Pipeline/Modules/sort_index_bam.nf
+  Script_3f8a5bd9f2c1ec4f: /mnt/d/Nextflow/Pipeline/Modules/variant_calling.nf
+  Script_8189a439690f290d: /mnt/d/Nextflow/Pipeline/Modules/raw_fastqc.nf
+  Script_3a9592033cfc6f7d: /mnt/d/Nextflow/Pipeline/Modules/sam_to_bam.nf
+  Script_95fedcea12820801: /mnt/d/Nextflow/Pipeline/main.nf
+  Script_ce1f66defb4238b3: /mnt/d/Nextflow/Pipeline/Modules/aligned_reads.nf
+  Script_f6da5b329ad8bc69: /mnt/d/Nextflow/Pipeline/Modules/multiqc.nf
+  Script_01c25fb2b60e56fe: /mnt/d/Nextflow/Pipeline/Workflows/workflow.nf
+  Script_6efd8818942c9314: /mnt/d/Nextflow/Pipeline/Modules/trimmed_reads.nf
+Feb-06 14:54:23.378 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing process or function NEXTLFLOW_PIPELINE() -- Did you mean 'NEXTFLOW_PIPELINE' instead?
+Feb-06 14:54:23.418 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Feb-06 14:54:23.430 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.MissingProcessException: Missing process or function NEXTLFLOW_PIPELINE() -- Did you mean 'NEXTFLOW_PIPELINE' instead?
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:192)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:249)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:260)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:429)
+	at nextflow.cli.Launcher.run(Launcher.groovy:515)
+	at nextflow.cli.Launcher.main(Launcher.groovy:675)
+Caused by: groovy.lang.MissingMethodException: No signature of method: nextflow.script.WorkflowBinding.NEXTLFLOW_PIPELINE() is applicable for argument types: () values: []
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:113)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:392)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_95fedcea12820801$_runScript_closure1$_closure2.doCall(Script_95fedcea12820801:8)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
+	... 10 common frames omitted
