@@ -198,12 +198,7 @@ Generated and temporary files are excluded using `.gitignore`.
 
 ---
 
-## Limitations
 
-* Supports single-end sequencing data only
-* Intended for educational and demonstration purposes
-
----
 
 
 
